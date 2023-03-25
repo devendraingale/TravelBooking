@@ -9,17 +9,17 @@ Pipeline {
 	stages {
 		stage ('code Compile'){
 			steps {
-				"sh mvn clean compile"
+				sh mvn clean compile
 			}
 		}
 		stage ('code Test'){
 			steps {
-				"sh mvn clean test"
+				sh mvn clean test
 			}
 		}
 		stage ('code package'){
 			steps {
-				"sh mvn clean package"
+				sh mvn clean package
 			}
 		}
 	}
