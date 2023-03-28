@@ -4,7 +4,7 @@ pipeline {
         }
     agent any
     tools {
-        maven 'mymaven'
+        maven 'mvn_3.8.8'
     }
 	stages {
 		stage ('code Compile'){
